@@ -93,11 +93,12 @@
         }
 
         .hero-text h2 {
-            font-size: 3rem !important;
+            font-size: 2.5rem !important;
             font-weight: 900 !important;
+            line-height: 1.6 !important;
         }
         .hero-text p {
-            font-size: 1.3rem !important;
+            font-size: 1.1rem !important;
         }
         .font-title {
             font-size: 1.6rem !important;
@@ -609,12 +610,32 @@
             display: inline-flex;
             align-items: center;
             gap: 5px;
-            padding: 3px 12px;
+            padding: 4px 14px;
             border-radius: 20px;
-            font-size: 0.7rem;
-            background: #FFC80015;
-            border: 1px solid #FFC80060;
+            font-size: 0.75rem;
+            font-weight: 800;
+            background: #FFC80020;
+            border: 2px solid #FFC800;
             color: #FFC800;
+            box-shadow: 0 0 12px rgba(255, 200, 0, 0.3), inset 0 0 12px rgba(255, 200, 0, 0.05);
+            text-shadow: 0 0 8px rgba(255, 200, 0, 0.2);
+            transition: 0.3s;
+        }
+
+        .tag-item:hover {
+            background: #FFC800;
+            color: #121212;
+            box-shadow: 0 0 25px rgba(255, 200, 0, 0.6), inset 0 0 20px rgba(255, 200, 0, 0.2);
+            transform: scale(1.05);
+        }
+
+        .tag-item i {
+            color: inherit;
+            font-size: 0.7rem;
+        }
+
+        .tag-item:hover i {
+            color: #121212;
         }
 
         .font-cat,
@@ -912,7 +933,7 @@
                 order: 2;
             }
             .hero-text h2 {
-                font-size: 2rem !important;
+                font-size: 1.8rem !important;
             }
             .hero-text p {
                 font-size: 1rem !important;
@@ -939,7 +960,7 @@
             <div class="nav-flex">
                 <div class="logo-area">
                     <h1>Amir almomenin.ir</h1>
-                    <p>هنر با نام یاد اقا امیرالمومنین</p>
+                    <p>رسانه فرهنگی هنری امیرالمومنین</p>
                 </div>
                 <div class="nav-links" id="navLinksContainer">
                     <button data-tab="home" class="nav-link active"><i class="fas fa-home"></i> خانه</button>
@@ -961,8 +982,8 @@
             <section class="hero" id="heroSection">
                 <div class="hero-grid">
                     <div class="hero-text">
-                        <h2>هنر اصیل و<br /><span>آثار ماندگار</span></h2>
-                        <p>مجموعه‌ای از هنرهای گرافیکی و تایپ‌فیس‌های نفیس با الهام از نام امیرالمومنین</p>
+                        <h2>هنر یک دنیای مجزاست که<br /><span>هرکس میتونه توش غرق بشه...</span></h2>
+                        <p>به سایت رسمی کانال رسانه فرهنگی هنری امیرالمومنین خوش آمدید</p>
                         <div class="hero-buttons">
                             <button class="btn-primary" id="shopNowBtn"><i class="fas fa-arrow-down"></i> مشاهده آثار</button>
                             <button class="btn-outline" id="sampleTypeBtn"><i class="fas fa-play-circle"></i> نمونه کار</button>
@@ -983,7 +1004,7 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <h4>Amir almomenin.ir</h4>
-                    <p>هنر با نام یاد اقا امیرالمومنین</p>
+                    <p>رسانه فرهنگی هنری امیرالمومنین</p>
                     <div class="social-icons">
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-telegram"></i></a>
@@ -1055,7 +1076,7 @@
                 { icon: "fa-layer-group", text: "تعداد | ۴تایی | با کیفیت بالا" },
                 { icon: "fa-folder-open", text: "دانلود فایل!" }
             ],
-            tags: ["#پک_اختصاصی", "#تایپوگرافی"]
+            tags: ["پک_اختصاصی", "تایپوگرافی"]
         }];
 
         // ==================== منطق سبد خرید و فیلترها ====================
@@ -1105,7 +1126,7 @@
                 let tagsHtml = '';
                 if (font.tags) {
                     tagsHtml = font.tags.map(t =>
-                        `<span class="tag-item"><i class="fas fa-hashtag"></i> ${t}</span>`
+                        `<span class="tag-item">${t}</span>`
                     ).join('');
                 }
 
@@ -1464,11 +1485,11 @@
                             <div class="contact-item">
                                 <div class="label">
                                     <i class="fas fa-paper-plane"></i>
-                                    کانال هنری
+                                    رسانه فرهنگی هنری امیرالمومنین
                                 </div>
                                 <div class="value">
                                     <a href="https://eitaa.com/mim_non_marjae_font" target="_blank">
-                                        <i class="fab fa-eitaa"></i> کانال هنر
+                                        <i class="fab fa-eitaa"></i> کانال
                                     </a>
                                 </div>
                             </div>
